@@ -33,21 +33,15 @@ int main(void) {
         if (integer < low) low = integer;
 
         // count number of even and odd integers
-        int sumEven = 0;
-       for (int even = 0; even <= 99999; even = even + 2) {
-        sumEven = sumEven + even;
-        numEven = sumEven / even;
+       if ( integer % 2 == 0) {
+           numEven++;
        }
-       int sumOdd = 0;
-       for (int odd = 1; odd <= 99999; odd = odd + 2) {
-        sumOdd = sumOdd + odd;
+       if (integer % 2 >>0) {
+            numOdd++;
        }
-       numEven = sumEven / even;
-       numOdd = sumOdd / odd;
     }
-    cout << "Number of integers " << numInt << endl;
-    cout << "High integer " << high << endl;
-    cout << "Low integer " << low << endl;
-    cout << "Number of even integers " << numEven << endl;
-    cout << "Number of odd integers " << numOdd << endl;
+    cout << "Largest value: " << high;
+    cout << " Smallest value: " << low << endl;
+    cout << "Even number count: " << numEven;
+    cout << " Odd number count: " << numOdd << endl;
 }
