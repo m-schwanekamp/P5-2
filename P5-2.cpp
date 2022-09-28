@@ -18,6 +18,7 @@ int main(void) {
     while (cin >> number) {
         integer = number;
         numInt++;
+        cout << "Enter number or Q to quit" << endl;
         if (cin.fail()) {
             return 0;
         }
